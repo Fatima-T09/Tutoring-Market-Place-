@@ -1,0 +1,16 @@
+{
+  "name": "tutoring-marketplace",
+  "version": "1.0.0",
+  "description": "Full-stack Tutoring Marketplace App",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run start:frontend\"",
+    "setup": "npm run install:all && echo '\n✅ Setup complete! Run: npm run dev:backend (terminal 1) then npm run start:frontend (terminal 2)'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

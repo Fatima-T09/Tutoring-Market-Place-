@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Database files (will be auto-created)
+backend/data/
+
+# Environment
+.env
+*.env
+
+# Build output
+frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
